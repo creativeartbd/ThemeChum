@@ -1,0 +1,13 @@
+.sticky-top {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 25px !important;
+}
+
+.menu-main-menu-container,
+.menu-before-login-container {
+    margin-left: auto;
+}
