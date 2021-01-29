@@ -1128,3 +1128,8 @@ img.custom-logo {
 .site-info p {
     color: rgb(122, 122, 122, 0.72);
 }
+
+header.page-header.not-found {
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
