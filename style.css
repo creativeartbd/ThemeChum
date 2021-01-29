@@ -1079,7 +1079,8 @@ textarea {
 }
 
 img.custom-logo {
-    width: 100%;
+    width: 160px;
+    max-width: 100%;
 }
 
 .sticky-top {
