@@ -1086,6 +1086,8 @@ img.custom-logo {
 .sticky-top {
     padding-top: 15px;
     padding-bottom: 15px;
+    box-shadow: 13px -5px 25px rgb(0 0 0 / 15%);
+    background-color: #fff;
 }
 
 .navbar-nav .nav-link {
