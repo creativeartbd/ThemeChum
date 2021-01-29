@@ -11,6 +11,10 @@ img.custom-logo {
     padding-right: 25px !important;
 }
 
+.navbar-nav li a {
+    color: #000;
+}
+
 .menu-main-menu-container,
 .menu-before-login-container {
     margin-left: auto;
