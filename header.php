@@ -29,7 +29,8 @@
 		
 			<nav class="navbar navbar-expand-lg sticky-top">		
 			<div class="container">
-				<?php
+			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.05 26.72"><defs><style>.cls-1{font-size:21.9px;font-family:ShinePersonalUse, Shine Personal Use;}.cls-2{fill:#36f;}</style></defs><text class="cls-1" transform="translate(0.17 18.62) scale(0.93 1)">theme<tspan class="cls-2" x="64.66" y="0">chum</tspan></text></svg>
+				<?php				
 				the_custom_logo();
 				if (is_front_page() && is_home()) :
 				?>

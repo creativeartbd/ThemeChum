@@ -49,3 +49,13 @@ function cc_mime_types($mimes) {
 	return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+// To admin bar to all user except administrator
+function themechum_is_show_admin_bar($content) {	
+	// except administrator
+	//return ( current_user_can( 'administrator' ) ) ? $content : false;
+	// for all
+	return false;
+}
+add_filter( 'show_admin_bar' , 'themechum_is_show_admin_bar');
+

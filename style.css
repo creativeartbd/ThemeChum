@@ -478,7 +478,7 @@ optgroup,
 textarea {
     color: #404040;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 1.5;
 }
 
@@ -560,15 +560,16 @@ hr {
 
 ul,
 ol {
-    margin: 0 0 1.5em 3em;
+    margin: 0 0 1.5em 0;
+    padding-left: 0;
 }
 
 ul {
-    list-style: disc;
+    list-style: none;
 }
 
 ol {
-    list-style: decimal;
+    list-style: none;
 }
 
 li>ul,
@@ -624,6 +625,7 @@ a:hover,
 a:focus,
 a:active {
     color: #191970;
+    text-decoration: none;
 }
 
 a:focus {

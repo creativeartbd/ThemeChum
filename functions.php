@@ -138,7 +138,7 @@ function themechum_widgets_init() {
 		'description'   => esc_html__('Add widgets here.', 'themechum'),
 		'before_widget' => '<div id="%1$s" class="col-lg-3 col-md-6 col-sm-6 %2$s"><div class="footer-block about-us-block">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h5 class="">',
+		'before_title'  => '<h5 class="footer-title">',
 		'after_title'   => '</h5>',
 	));
 
@@ -148,7 +148,7 @@ function themechum_widgets_init() {
 		'description'   => esc_html__('Add widgets here.', 'themechum'),
 		'before_widget' => '<div id="%1$s" class="col-lg-3 col-md-6 col-sm-6 %2$s"><div class="footer-block links">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h5 class="">',
+		'before_title'  => '<h5 class="footer-title">',
 		'after_title'   => '</h5>',
 	));
 
@@ -158,7 +158,7 @@ function themechum_widgets_init() {
 		'description'   => esc_html__('Add widgets here.', 'themechum'),
 		'before_widget' => '<div id="%1$s" class="col-lg-3 col-md-6 col-sm-6 %2$s"><div class="footer-block links">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h5 class="">',
+		'before_title'  => '<h5 class="footer-title">',
 		'after_title'   => '</h5>',
 	));
 
@@ -168,7 +168,7 @@ function themechum_widgets_init() {
 		'description'   => esc_html__('Add widgets here.', 'themechum'),
 		'before_widget' => '<div id="%1$s" class="col-lg-3 col-md-6 col-sm-6 %2$s"><div class="footer-block links">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h5 class="">',
+		'before_title'  => '<h5 class="footer-title">',
 		'after_title'   => '</h5>',
 	));
 
@@ -178,7 +178,7 @@ function themechum_widgets_init() {
 		'description'   => esc_html__('Add widgets here.', 'themechum'),
 		'before_widget' => '<div id="%1$s" class="col-lg-4 col-md-12 %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="">',
+		'before_title'  => '<h5 class="footer-title">',
 		'after_title'   => '</h2>',
 	));
 

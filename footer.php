@@ -10,21 +10,35 @@
  */
 
 ?>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<footer id="colophon" class="site-footer">
-					<div class="site-info">						
-						<span class="sep"> | </span>
-							<?php
-							/* translators: 1: Theme name, 2: Theme author. */
-							printf( esc_html__( 'Theme: %1$s by %2$s.', 'themechum' ), 'themechum', '<a href="http://www.shibir.dev">Shibbi Ahmed</a>' );
-							?>
-					</div><!-- .site-info -->
-				</footer><!-- #colophon -->
+	<footer id="colophon" class="site-footer">
+		<div class="container">
+			<div class="row">
+				<?php
+				if(is_active_sidebar('footer-1')){
+					dynamic_sidebar('footer-1');
+				}
+				if(is_active_sidebar('footer-2')){
+					dynamic_sidebar('footer-2');
+				}
+				if(is_active_sidebar('footer-3')){
+					dynamic_sidebar('footer-3');
+				}
+				if(is_active_sidebar('footer-4')){
+					dynamic_sidebar('footer-4');
+				}
+				?>
 			</div>
+			<div class="col-md-12 text-center">
+				<div class="site-info">		
+					<?php 
+					if(is_active_sidebar('copyright')) {
+						dynamic_sidebar('copyright');
+					} 
+					?>					
+				</div><!-- .site-info -->				
+			</div>		
 		</div>
-	</div>
+	</footer><!-- #colophon -->
 	
 </div><!-- #page -->
 
