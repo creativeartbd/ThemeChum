@@ -57,5 +57,5 @@ function themechum_is_show_admin_bar($content) {
 	// for all
 	return false;
 }
-add_filter( 'show_admin_bar' , 'themechum_is_show_admin_bar');
+//add_filter( 'show_admin_bar' , 'themechum_is_show_admin_bar');
 
