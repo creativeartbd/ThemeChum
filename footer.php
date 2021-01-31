@@ -37,8 +37,8 @@
 					?>
 				</div>
 				<div class="col-md-6 text-right">
-					<div class="go-to-top">
-						<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+					<div id="go-to-top">						
+						<i class="fa fa-angle-double-up" aria-hidden="true"></i>									
 					</div>
 				</div>
 			</div>

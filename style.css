@@ -1148,7 +1148,7 @@ p {
     margin-top: 20px;
 }
 
-.go-to-top i {
+#go-to-top i {
     font-size: 25px;
     background: #36f;
     color: #fff;
@@ -1162,7 +1162,7 @@ p {
     transition: all 0.3s;
 }
 
-.go-to-top i:hover {
+#go-to-top i:hover {
     text-shadow: 1px 1px 55px #000;
     font-size: 30px;
 }
