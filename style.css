@@ -651,13 +651,16 @@ input[type="submit"] {
     color: #fff;
     line-height: 1;
     padding: 15px 25px;
+    cursor: pointer;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
+    background: #fff;
+    border: 1px solid #3366ff;
+    color: #000;
 }
 
 button:active,
