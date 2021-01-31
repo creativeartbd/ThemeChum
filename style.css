@@ -478,7 +478,7 @@ optgroup,
 textarea {
     color: #404040;
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -615,6 +615,7 @@ table {
 
 a {
     color: #4169e1;
+    transition: all 0.3s;
 }
 
 a:visited {
@@ -1085,6 +1086,11 @@ img.custom-logo {
     max-width: 100%;
 }
 
+header.page-header.not-found {
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
 .sticky-top {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1114,11 +1120,16 @@ img.custom-logo {
 }
 
 .site-footer .footer-title {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
-.site-footer a {
+.site-footer .footer-top a,
+p {
     color: rgb(122, 122, 122, 0.72);
+}
+
+.site-footer a:hover {
+    color: rgb(122, 122, 122, 2.9);
 }
 
 .site-info {
@@ -1131,7 +1142,27 @@ img.custom-logo {
     color: rgb(122, 122, 122, 0.72);
 }
 
-header.page-header.not-found {
-    margin-top: 200px;
-    margin-bottom: 150px;
+.footer-bottom {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.go-to-top i {
+    font-size: 25px;
+    background: #36f;
+    color: #fff;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.go-to-top i:hover {
+    text-shadow: 1px 1px 55px #000;
+    font-size: 30px;
 }

@@ -12,7 +12,7 @@
 ?>
 	<footer id="colophon" class="site-footer">
 		<div class="container">
-			<div class="row">
+			<div class="row footer-top">
 				<?php
 				if(is_active_sidebar('footer-1')){
 					dynamic_sidebar('footer-1');
@@ -28,21 +28,23 @@
 				}
 				?>
 			</div>
-			<div class="col-md-12 text-center">
-				<div class="site-info">		
+			<div class="row footer-bottom">
+				<div class="col-md-6">					
 					<?php 
 					if(is_active_sidebar('copyright')) {
 						dynamic_sidebar('copyright');
 					} 
-					?>					
-				</div><!-- .site-info -->				
-			</div>		
+					?>
+				</div>
+				<div class="col-md-6 text-right">
+					<div class="go-to-top">
+						<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
 		</div>
-	</footer><!-- #colophon -->
-	
+	</footer><!-- #colophon -->	
 </div><!-- #page -->
-
 <?php wp_footer(); ?>
-
 </body>
 </html>

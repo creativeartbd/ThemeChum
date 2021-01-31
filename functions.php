@@ -136,40 +136,40 @@ function themechum_widgets_init() {
 		'name'          => esc_html__('Footer 1', 'themechum'),
 		'id'            => 'footer-1',
 		'description'   => esc_html__('Add widgets here.', 'themechum'),
-		'before_widget' => '<div id="%1$s" class="col-lg-3 col-md-6 col-sm-6 %2$s"><div class="footer-block about-us-block">',
+		'before_widget' => '<div id="%1$s" class="col-lg-4 col-md-6 col-sm-6 %2$s"><div class="footer-block about-us-block">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h5 class="footer-title">',
-		'after_title'   => '</h5>',
+		'before_title'  => '<h6 class="footer-title">',
+		'after_title'   => '</h6>',
 	));
 
 	register_sidebar(array(
 		'name'          => esc_html__('Footer 2', 'themechum'),
 		'id'            => 'footer-2',
 		'description'   => esc_html__('Add widgets here.', 'themechum'),
-		'before_widget' => '<div id="%1$s" class="col-lg-3 col-md-6 col-sm-6 %2$s"><div class="footer-block links">',
+		'before_widget' => '<div id="%1$s" class="col-lg-2 col-md-6 col-sm-6 %2$s"><div class="footer-block links">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h5 class="footer-title">',
-		'after_title'   => '</h5>',
+		'before_title'  => '<h6 class="footer-title">',
+		'after_title'   => '</h6>',
 	));
 
 	register_sidebar(array(
 		'name'          => esc_html__('Footer 3', 'themechum'),
 		'id'            => 'footer-3',
 		'description'   => esc_html__('Add widgets here.', 'themechum'),
-		'before_widget' => '<div id="%1$s" class="col-lg-3 col-md-6 col-sm-6 %2$s"><div class="footer-block links">',
+		'before_widget' => '<div id="%1$s" class="col-lg-2 col-md-6 col-sm-6 %2$s"><div class="footer-block links">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h5 class="footer-title">',
-		'after_title'   => '</h5>',
+		'before_title'  => '<h6 class="footer-title">',
+		'after_title'   => '</h6>',
 	));
 
 	register_sidebar(array(
 		'name'          => esc_html__('Footer 4', 'themechum'),
 		'id'            => 'footer-4',
 		'description'   => esc_html__('Add widgets here.', 'themechum'),
-		'before_widget' => '<div id="%1$s" class="col-lg-3 col-md-6 col-sm-6 %2$s"><div class="footer-block links">',
+		'before_widget' => '<div id="%1$s" class="col-lg-2 col-md-6 col-sm-6 %2$s"><div class="footer-block links">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h5 class="footer-title">',
-		'after_title'   => '</h5>',
+		'before_title'  => '<h6 class="footer-title">',
+		'after_title'   => '</h6>',
 	));
 
 	register_sidebar(array(
@@ -178,8 +178,8 @@ function themechum_widgets_init() {
 		'description'   => esc_html__('Add widgets here.', 'themechum'),
 		'before_widget' => '<div id="%1$s" class="col-lg-4 col-md-12 %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h5 class="footer-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h6 class="footer-title">',
+		'after_title'   => '</h6>',
 	));
 
 	register_sidebar(array(
@@ -198,12 +198,14 @@ add_action( 'widgets_init', 'themechum_widgets_init' );
  * Enqueue scripts and styles.
  */
 function themechum_scripts() {	
+	// Load CSS	
+	wp_enqueue_style( 'font-awesome', '//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'themechum-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'themechum-base-style', get_template_directory_uri() . '/assets/css/base.css', array(), _S_VERSION );
 	wp_style_add_data( 'themechum-style', 'rtl', 'replace' );
 	
-	
+	// Load JS	
 	wp_enqueue_script( 'popper', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array('jquery'), _S_VERSION, true );
 	wp_enqueue_script( 'boostrap', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), _S_VERSION, true );
 	wp_enqueue_script( 'themechum-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
