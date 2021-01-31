@@ -658,9 +658,9 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    background: #fff;
-    border: 1px solid #3366ff;
-    color: #000;
+    background: #1f2e77;
+    border: none;
+    color: #fff;
 }
 
 button:active,
